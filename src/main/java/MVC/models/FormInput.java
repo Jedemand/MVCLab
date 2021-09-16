@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class FormInput {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "forminput_id")
+    @Column(name = "formInput_id")
     private Integer Id;
 
     @Version
@@ -21,13 +21,14 @@ public class FormInput {
 
     private String textArea;
 
-    private Integer radios;
-
-    private Integer select;
-
     private Boolean option1;
     private Boolean option2;
     private Boolean option3;
+
+
+    private Boolean select1;
+    private Boolean select2;
+    private Boolean select3;
 
     //region
     public FormInput() {
@@ -100,22 +101,6 @@ public class FormInput {
         this.textArea = textArea;
     }
 
-    public Integer getRadios() {
-        return radios;
-    }
-
-    public void setRadios(Integer radios) {
-        this.radios = radios;
-    }
-
-    public Integer getSelect() {
-        return select;
-    }
-
-    public void setSelect(Integer select) {
-        this.select = select;
-    }
-
     public Boolean getOption1() {
         return option1;
     }
@@ -140,9 +125,34 @@ public class FormInput {
         this.option3 = option3;
     }
 
+
+    public Boolean getSelect1() {
+        return select1;
+    }
+
+    public void setSelect1(Boolean select1) {
+        this.select1 = select1;
+    }
+
+    public Boolean getSelect2() {
+        return select2;
+    }
+
+    public void setSelect2(Boolean select2) {
+        this.select2 = select2;
+    }
+
+    public Boolean getSelect3() {
+        return select3;
+    }
+
+    public void setSelect3(Boolean select3) {
+        this.select3 = select3;
+    }
+
+
     //endregion
 
-    //region
 
     @Override
     public String toString() {
@@ -155,14 +165,12 @@ public class FormInput {
                 ", check2=" + check2 +
                 ", check3=" + check3 +
                 ", textArea='" + textArea + '\'' +
-                ", radios=" + radios +
-                ", select=" + select +
                 ", option1=" + option1 +
                 ", option2=" + option2 +
                 ", option3=" + option3 +
+                ", select1=" + select1 +
+                ", select2=" + select2 +
+                ", select3=" + select3 +
                 '}';
     }
-
-
-    //endregion
 }

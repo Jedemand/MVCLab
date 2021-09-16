@@ -10,11 +10,82 @@
 </head>
 
 <body>
-
+    <form:form modelAttribute="forminput" action= "/forminput" method="post" cssClass="form-horizontal">
     <fieldset>
         <legend>Form Input Demo</legend>
         <form:hidden path="Id"/>
 
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Text: </label>
+            <div class="col-sm-6">
+                <form:input path="text" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Password: </label>
+            <div class="col-sm-6">
+                <form:input path="password" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Check Box 1: </label>
+            <div class="col-sm-6">
+                <form:input path="check1" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Check Box 2: </label>
+            <div class="col-sm-6">
+                <form:input path="check2" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Check Box 3: </label>
+            <div class="col-sm-6">
+                <form:input path="check3" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Text Area: </label>
+            <div class="col-sm-6">
+                <form:input path="textArea" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Radios: </label>
+            <div class="col-sm-6">
+                <form:input path="option1" class="form-control"/>
+            </div>
+            <div class="col-sm-6">
+                <form:input path="option2" class="form-control"/>
+            </div>
+            <div class="col-sm-6">
+                <form:input path="option3" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Select:  </label>
+            <div class="col-sm-6">
+                <form:input path="select1" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Select:  </label>
+            <div class="col-sm-6">
+                <form:input path="select2" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Select:  </label>
+            <div class="col-sm-6">
+                <form:input path="select3" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3 col-sm-offset-2">
+                <form:button class="btn btn-primary">Submit</form:button>
+            </div>
+        </div>
     </fieldset>
-
+    </form:form>
 </body>
