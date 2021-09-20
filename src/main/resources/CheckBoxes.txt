@@ -1,0 +1,7 @@
+<form:label path="check1" >Option 1</form:label>
+                        <jsp:useBean id="trueFalse" class="MVC.controllers.FormInputController" type="java.util.List"/>
+                        <form:checkboxes path="check1" items="${trueFalse.getTrueAndFalse()}"/>
+
+                        <form:label path="check1" >Option 1</form:label>
+                        <jsp:useBean id="trueFalse" scope="request" type="java.util.List"/>
+                        <form:checkboxes path="check1" items="${trueFalse}"/>

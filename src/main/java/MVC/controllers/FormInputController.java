@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Controller
 public class FormInputController {
@@ -27,5 +30,13 @@ public class FormInputController {
         formInputRepository.save(formInput);
         System.out.println(formInput.toString());
         return "forminput";
+    }
+
+    @ModelAttribute("trueFalse")
+    public List<Boolean> getTrueAndFalse(){
+        List<Boolean> trueFalseList = new ArrayList<Boolean>();
+        trueFalseList.add(true);
+        trueFalseList.add(false);
+        return trueFalseList;
     }
 }

@@ -21,9 +21,9 @@ public class FormInput {
 
     private String textArea;
 
-    private Boolean option1;
-    private Boolean option2;
-    private Boolean option3;
+    private String option1;
+    private String option2;
+    private String option3;
 
 
     private Boolean select1;
@@ -101,30 +101,29 @@ public class FormInput {
         this.textArea = textArea;
     }
 
-    public Boolean getOption1() {
+    public String getOption1() {
         return option1;
     }
 
-    public void setOption1(Boolean option1) {
+    public void setOption1(String option1) {
         this.option1 = option1;
     }
 
-    public Boolean getOption2() {
+    public String getOption2() {
         return option2;
     }
 
-    public void setOption2(Boolean option2) {
+    public void setOption2(String option2) {
         this.option2 = option2;
     }
 
-    public Boolean getOption3() {
+    public String getOption3() {
         return option3;
     }
 
-    public void setOption3(Boolean option3) {
+    public void setOption3(String option3) {
         this.option3 = option3;
     }
-
 
     public Boolean getSelect1() {
         return select1;
